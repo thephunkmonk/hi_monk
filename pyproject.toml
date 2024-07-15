@@ -1,6 +1,6 @@
 [project]
 name = "hi_monk"
-version = "0.1.0"
+version = "0.7.0"
 description = "Default template for PDM package"
 authors = [
     {name = "thephunkmonk", email = "andrewchoi1218@gmail.com"},
@@ -14,6 +14,9 @@ license = {text = "MIT"}
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
+[project.scripts]
+hi-monk = "hi_monk.hello:hi"
+#script = package.pyfile:function_name
 
 [tool.pdm]
 distribution = true
